@@ -1,0 +1,18 @@
+.neon-text {
+    color: #00ff00;
+    font-size: 36px;
+    animation: neonAnimation 2s infinite;
+    background-color: #000;
+    padding: 10px;
+    display: inline-block;
+  }
+  
+  @keyframes neonAnimation {
+    0%, 100% {
+      text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+    }
+    50% {
+      text-shadow: none;
+    }
+  }
+  

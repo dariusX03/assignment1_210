@@ -1,0 +1,20 @@
+$neon-color: #00ff00;
+$background-color: #000;
+
+@keyframes neonAnimation {
+  0%, 100% {
+    text-shadow: 0 0 10px $neon-color, 0 0 20px $neon-color, 0 0 30px $neon-color;
+  }
+  50% {
+    text-shadow: none;
+  }
+}
+
+.neon-text {
+  color: $neon-color;
+  font-size: 36px;
+  animation: neonAnimation 2s infinite;
+  background-color: $background-color;
+  padding: 10px;
+  display: inline-block;
+}
